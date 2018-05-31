@@ -36,7 +36,6 @@ body {
   margin-right: 2vw;
 }
 
-
 .card-body{
   display: flex;
   flex-flow: column nowrap;
@@ -69,11 +68,11 @@ body {
   width: 100%;
   height: 5vw;
 }
+
 table{
   opacity: .80;
   width: 20vw;
 }
-
 
 td,th{
   text-align: center;
@@ -81,24 +80,52 @@ td,th{
 }
 
 
-
-@media only screen and (max-width: 650px) {
+@media only screen and (min-width: 650px) and (max-width: 999px) {
   .card{
-    width: 20vw;
-    height: 13vh;
+    width: 16vw;
+    height: 15vw;
+  }
+  #return{
+    margin: 0 auto;
+    font-size: 3.5vw;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 6.25vw;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 649px) {
   .card{
-    width: 18vh;
-    height: 14vh;
+    width: 24vw;
+    height: 17vw;
+  }
+  .card-body{
+    padding: 2.25vw;
   }
   .btn{
+    margin: 0 auto;
+    display: block;
     font-size: 1.6vw;
     padding: 0.6vh 0;
+    width:14vw;
+    text-align: center;
   }
   .card-title{
-    font-size: 3.0vw;
+    font-size: 1.8vw;
+  }
+
+  #return{
+    margin: 0 auto;
+    font-size: 3.5vw;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width:1400px){
+  .card{
+    width: 16vw;
+    height: 15vw;
   }
 }
